@@ -12,9 +12,9 @@ spec:
      paths:
       - path: "/bokka"
         backend:
-          serviceName: app-v1
+          serviceName: nginx-serviceobj
           servicePort: 80
       - path: "/tokka"
         backend:
-          serviceName: service
+          serviceName: nginx-mainline-perl-serviceobj
           servicePort: 80
