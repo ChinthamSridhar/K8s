@@ -12,7 +12,7 @@ spec:
      paths:
       - path: "/bokka"
         backend:
-          serviceName: service
+          serviceName: app-v1
           servicePort: 80
       - path: "/tokka"
         backend:
