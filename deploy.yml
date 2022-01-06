@@ -16,6 +16,6 @@ spec:
   spec:
    containers:
     - name: deploycontainer
-      image: ngnix:latest
+      image: nginx:perl
       ports:
        - containerPort: 80
