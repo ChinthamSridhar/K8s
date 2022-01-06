@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: myingress
+ labels:
+  app: myingress
+ annotations:
+  nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+ rules:
+  - http:
+     paths:
+      - path: "/bokka"
+        backend:
+          serviceName: service
+          servicePort: 80
+      - path: "/tokka"
+        backend:
+          serviceName: service
+          servicePort: 80
